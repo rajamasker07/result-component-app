@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { hanken } from './ui/fonts'
 
 export const metadata: Metadata = {
   title: 'Result Component App',
@@ -14,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={hanken.className}>{children}</body>
+      <body className="font-hanken">{children}</body>
     </html>
   )
 }
